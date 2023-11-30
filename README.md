@@ -1,6 +1,23 @@
 # Non-functional requirements (Front-end)
 
-How to use this doc (Sergey)
+## Introduction
+This document serves as a guide for lead engineers and developers embarking on a new project. It outlines the non-functional requirements (NFRs) that may be applicable to a project. 
+
+## How to Use This Document
+1. **Review Categories**: Begin by reviewing all the non-functional requirement categories provided in this document to determine their relevance to your project.
+
+2. **Forking and Renaming**: If relevant, fork this repository, rename it to match your project's name, and indicate that it is a NFRs document.
+
+3. **Disabling Unneeded Requirements**: Instead of removing non-essential requirements, disable them (e.g., make them gray) to maintain a comprehensive list for future reference.
+
+4. **Defining Requirements**: Break down the requirements into three categories:
+   - **Required**: Must-have requirements for the project.
+   - **Nice to Have**: Desirable requirements that could enhance the project but are not essential.
+   - **Unneeded**: Requirements that are not applicable to the current project.
+
+5. **Attach to Project's Notion File**: Link the cloned repository to the project's Notion file or any other project management tool being used.
+
+6. **Ensure Understanding**: Verify that all developers and a PM have a clear understanding of the requirements and their priorities as listed in the repository.
 
 ## Non-functional requirements categories
 
