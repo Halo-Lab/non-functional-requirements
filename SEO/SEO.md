@@ -24,7 +24,7 @@ Technical SEO comprises a set of solutions aimed at optimizing your web applicat
 
 ## When and why do we need to think about technical SEO
 
-The short answer is "always." During the development of a web application, it's crucial to prioritize the end-user's experience. This involves considerations such as:
+The short answer is "always". During the development of a web application, it's crucial to prioritize the end-user's experience. This involves considerations such as:
 
 - Ensuring the safety of the website, especially when handling personal information.
 - Compatibility with various screen sizes and accommodating users with slow internet connections.
@@ -76,11 +76,11 @@ Ensure that you place the title of your pages—or HTML documents—in the `<hea
 
 Search engines typically utilize the title to create a snippet of your site on the search results page (SERP).
 
-[Title in SERP](images/SERP.png)
+![Title in SERP](images/SERP.png)
 
 In addition, browsers display the title in page tabs. 
 
-[Title in browser tab](images/Tabs.pns)
+![Title in browser tab](images/Tabs.pns)
 
 The title should be informative. For instance, if your pages are dedicated to dragons from the Game of Thrones show, your title could be 'Targaryen's Dragons.' Additionally, the title can incorporate your site name, such as 'Targaryen's Dragons: GoT Fans Database.' It's advisable to limit the title length to 60-70 characters.
 
