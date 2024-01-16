@@ -80,7 +80,7 @@ Search engines typically utilize the title to create a snippet of your site on t
 
 In addition, browsers display the title in page tabs. 
 
-![Title in browser tab](images/Tabs.pns)
+![Title in browser tab](images/Tabs.png)
 
 The title should be informative. For instance, if your pages are dedicated to dragons from the Game of Thrones show, your title could be 'Targaryen's Dragons.' Additionally, the title can incorporate your site name, such as 'Targaryen's Dragons: GoT Fans Database.' It's advisable to limit the title length to 60-70 characters.
 
