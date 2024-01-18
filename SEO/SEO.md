@@ -7,7 +7,7 @@ Table of contents
 - [Golden rule of SEO.](#golden-rule-of-seo)
 - [Mobile-friendly or compatible with all screen sizes.](#mobile-friendly-or-compatible-with-all-screen-sizes)
 - [Performance or pagespeed.](#performance-or-pagespeed)
-- [Site and page meta data, Open Graph protocole.](#site-and-page-meta-data-open-graph-protocole)
+- [Site and page meta data, Open Graph protocol.](#site-and-page-meta-data-open-graph-protocol)
 - [Image optimization.](#image-optimization)
 - [Robots.txt.](#robotstxt)
 - [Sitemap.xml.](#sitemapxml)
@@ -58,7 +58,7 @@ For an in-depth understanding of performance requirements, refer to the dedicate
 
 For more details on optimizing your application's performance, refer to the performance chapter.
 
-## Site and page meta data, Open Graph protocole
+## Site and page meta data, Open Graph protocol
 
 These elements enhance the visibility of your project on search engines. Prior to that, they significantly impact user experience during site navigation.
 
@@ -113,4 +113,35 @@ Some time ago, search engines used this metadata to understand the content of th
       name="keywords"
       content="JavaScript, programming language, guide" />
 </head>
+```
+
+### Open Graph protocole
+
+Open Graph (OG) protocol enhances the visibility and attractiveness of your pages on social media platforms such as Facebook, X (formerly Twitter), etc. OG helps social media generate a title, description, and image when somebody shares your page.
+
+![Post from Facebook feed](images/Facebook.png)
+
+Please check [this site](https://ogp.me/) for additional information and a step-by-step guide on implementing the Open Graph (OG) protocol on your pages.
+
+> Tip: If you are using metaframeworks like Next or Gatsby, you can easily implement site metadata and Open Graph (OG) using the tools and recommendations provided by these frameworks.
+
+## Image optimization
+
+Image optimization helps improve page load time, reduce hosting costs, and enhance overall user experience. Here are some tips to help you optimize images.
+
+### Add alt attribute
+
+This attribute is displayed if the browser cannot show an image for some reason. In addition, the `alt` attribute helps users with screen readers understand what is displayed in your image. Note that it is possible to leave the `alt` attribute empty for decorative images such as icons, backgrounds, etc.
+
+
+```html
+<img src="image/example.png" alt="football players" />
+```
+
+### Specify width and height attributes in HTML
+
+This prevents layout shift and improves user experience.
+
+```html
+<img src="image/example.png" alt="football players" width="700" height="350" />
 ```
