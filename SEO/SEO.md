@@ -16,7 +16,6 @@ Table of contents
 - [Error pages.](#error-pages)
 - [Redirects.](#redirects)
 - [Semantical page structure, semantical markup Schema.org.](#semantical-page-structure-semantical-markup-schemaorg)
-- [Accessibility.](#accessibility)
 
 ## Introduction: what is technical SEO
 
@@ -145,3 +144,28 @@ This prevents layout shift and improves user experience.
 ```html
 <img src="image/example.png" alt="football players" width="700" height="350" />
 ```
+
+### Use srcset
+
+This is an image attribute that specifies versions of the image for different screen sizes and resolutions. For example, `srcset` helps the browser choose an image with a width of 360px for mobile screens and an image with a width of 720px for desktop screens. Please check additional information [here](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset).
+
+> If you are using metaframeworks like Next or Gatsby, check their [guidelines for optimizing images](https://nextjs.org/docs/pages/building-your-application/optimizing/images).
+
+### Choose correct loading strategy
+
+Always use the `loading="lazy"` attribute for below-the-fold images. Consider `loading="eager"` for above-the-fold images that should be rendered immediately to avoid blocking the first contentful paint.
+
+### Use CDN for images
+
+This practice drastically decreases image payloads, and that is beneficial for user experience.
+
+### Use robots.txt file
+
+This file can contain instructions for search engines. Please [check for additional information and guidelines](https://developers.google.com/search/docs/crawling-indexing/robots/intro).
+
+### Use sitemap.xml
+
+This file contains the site structure to help search engines crawl your site. Additional information can be found [here](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview).
+
+### Url's, HTTPS protocole
+
