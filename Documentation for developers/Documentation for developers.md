@@ -61,12 +61,12 @@ To write such a list, you must identify what methodologies/principles you are us
 By justifying the use of a particular rule, you give the reader more understanding of the problems you encounter on the project and how you solve them.
 
 Below is an example of such a list:
-- We use the **Mobile First** principle as our project is designed for phone, tablet and desktop. \
-  This principle helps phone users quickly get a content of the application and start interacting with it using less computing power.
-- We use the **BEM** methodology to write application styles. \
-  This helps us navigate styles more easily and avoid bugs with accidental reuse of styles.
-- We also use the **SOLID** principle to write the functionality of objects and entities. \
-  This helps us avoid bugs and have clearer methods of interacting with application logic
+> - We use the **Mobile First** principle as our project is designed for phone, tablet and desktop. \
+>   This principle helps phone users quickly get a content of the application and start interacting with it using less computing power.
+> - We use the **BEM** methodology to write application styles. \
+>   This helps us navigate styles more easily and avoid bugs with accidental reuse of styles.
+> - We also use the **SOLID** principle to write the functionality of objects and entities. \
+>   This helps us avoid bugs and have clearer methods of interacting with application logic
 
 There are not many examples in the list above, but as a reader we can draw some conclusions. For example, the fact that the application has several versions for different devices and that the Mobile First principle is used. If the reader is a developer, he will already have an idea of the code before he starts looking at it. The developer will also understand exactly how to edit and add application styles
 
@@ -76,16 +76,52 @@ In this section of the documentation you can describe the list of technologies/l
 Also, if the technology is not obvious or popular, it is worth indicating the purpose of its use
 
 Below is an example of such a list:
-- **react** v18
-- **react-router-dom** v6
-- **mobx** v6 - using for manage application data and manipulate it
-- **sass** v1
-- **typescript** v5
-- **yup** v1 - using for form validations
-- **dayjs** v1 - using to manipulate with date's easier
+> - **react** v18
+> - **react-router-dom** v6
+> - **mobx** v6 - using for manage application data and manipulate it
+> - **sass** v1
+> - **typescript** v5
+> - **yup** v1 - using for form validations
+> - **dayjs** v1 - using to manipulate with date's easier
 
 Note! Don't list all the dependencies, their versions, and don't come up with a description for each one. \
 Indicate the main and specific technologies and their major versions (Major versions are most remembered by developers and contain differences in use) \
 Your main task is to describe it as simply as possible. The developer will be able to open the code and learn about the technologies in more detail, and sometimes it is important for the project manager or client to know what you are using on the project, and it will be easier for them to understand if there is nothing superfluous
 
 ## Description of the project structure
+This section of the documentation should contain a basic map of the project and help a new developer navigate files
+
+Below you can see an example of such a map based on the **react** application:
+> `/public` - folder with public files and media files \
+> `/src` - root folder of app code
+> > `/index.tsx` - root file of **react** application \
+> > `/App.tsx` - root file of **react** components \
+> > `/elements` - folder of **react** pure components *(Logic of components depends only from props)*
+> > > `/[ElementName]` - example of component folder
+> > > > `/index.ts` - element root file which exports component and all public methods of it \
+> > > > `/[ElementName].tsx` - file which includes component code and logic \
+> > > > `/[ElementName].module.scss` - file which includes component styles \
+> > > > `/[ElementName].types.ts` - file which includes component **typescript** types and interfaces used in component file
+> > 
+> > `/components` - folder of **react** components *(Logic of components can contain some api requires or store state manipulation)*
+> > > `/[ComponentName]` - example of component folder
+> > > > `/index.ts` - element root file which exports component and all public methods of it \
+> > > > `/[ComponentName].tsx` - file which includes component code and logic \
+> > > > `/[ComponentName].module.scss` - file which includes component styles \
+> > > > `/[ComponentName].types.ts` - file which includes component **typescript** types and interfaces used in component file
+
+This map shows the basic structure of a react application, but it may contain more useful directories.
+For example, you can specify in which folder or file the functions for the API request are stored \
+This map also shows by what principle developers name files in `/elements` and `/components` folders
+
+As with dependencies, do not describe all project files. Describe the basic structure and possibly complex directories (the purpose of which is not obvious)
+
+## Description of specific flows or custom modules
+
+> In progress
+
+## Recommendations for improving documentation
+
+In addition to the above sections, I will add a few tips to improve the documentation:
+- Over time, any documentation may become outdated and lose its value. To avoid this, developers should update it. If you can't update documentation frequently, the best time to update it is when you're refactoring your code, finishing some flow, adding a new feature, or changing dependencies or project requirements. You can also set a period after which the documentation needs to be checked and updated (For example, every month or a longer period)
+- When writing or updating documentation, try to think like a reader who knows nothing about this project, this will help you focus on the complex unknowns of your project. The ideal option would be to let a developer who is not familiar with your project view the documentation.
