@@ -159,11 +159,11 @@ Always use the `loading="lazy"` attribute for below-the-fold images. Consider `l
 
 This practice drastically decreases image payloads, and that is beneficial for user experience.
 
-### Use robots.txt file
+### Robots.txt
 
 This file can contain instructions for search engines. Please [check for additional information and guidelines](https://developers.google.com/search/docs/crawling-indexing/robots/intro).
 
-### Use sitemap.xml
+### Sitemap.xml
 
 This file contains the site structure to help search engines crawl your site. Additional information can be found [here](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview).
 
