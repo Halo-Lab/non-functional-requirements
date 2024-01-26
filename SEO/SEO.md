@@ -11,7 +11,7 @@ Table of contents
 - [Image optimization.](#image-optimization)
 - [Robots.txt.](#robotstxt)
 - [Sitemap.xml.](#sitemapxml)
-- [Url's, HTTPS protocole.](#urls-https-protocole)
+- [URLs, HTTPS protocole.](#urls-https-protocole)
 - [Page links.](#page-links)
 - [Error pages.](#error-pages)
 - [Redirects.](#redirects)
@@ -167,5 +167,24 @@ This file can contain instructions for search engines. Please [check for additio
 
 This file contains the site structure to help search engines crawl your site. Additional information can be found [here](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview).
 
-### Url's, HTTPS protocole
+### URLs, HTTPS protocole
 
+Google prioritizes user safety by considering HTTPS as a ranking factor. Therefore, it's important to obtain an SSL certificate and enable HTTPS on your client's site.
+
+URLs on your site should be user-friendly and readable whenever possible. While search engines can work with any URL structure, your clients prefer `https://example.com/tablets/ipad` over `https://example.com/e13rgf-15wer/97yip-yh77`.
+
+### Page Links
+
+Internal links are crucial for both users and web crawlers. Unlike users, bots prefer links with the HTML `<a>` tag. Therefore, it's important to check whether your framework supports this capability. For example, Next.js' `Link` component extends the `<a>` tag with additional capabilities.
+
+### Error pages
+
+The 404 Error Page should be user-friendly and consistent with the design of the entire site. It should also aim to engage users and encourage them to explore other relevant content on the site. One effective approach is to provide alternative suggestions or links to related content, similar to saying, 'Hey, we don't have blue cars, but look here, we have yellow cars, which are almost what you're looking for.'
+
+### Redirects
+
+If a client asks you to delete pages, it's important to discuss redirecting the deleted pages' URLs to existing pages instead of displaying a 404 error. Implementing a permanent redirect (301) is generally better for both users and SEO, as it ensures a smoother experience and preserves the SEO value of the deleted pages.
+
+### Semantical page structure, semantical markup Schema.org
+
+Try to use semantic HTML tags, such as `<main>`, `<article>`, etc., as they are helpful for users, especially for those who use screen readers, and for search bots. Additionally, incorporating semantic markup from [Schema.org](https://schema.org/), if possible, informs Google about your page's content and may enable search enhancements, also known as rich snippets, on the search results page.
