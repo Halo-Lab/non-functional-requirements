@@ -11,7 +11,7 @@ Table of contents
 - [Image optimization.](#image-optimization)
 - [Robots.txt.](#robotstxt)
 - [Sitemap.xml.](#sitemapxml)
-- [URLs, HTTPS protocole.](#urls-https-protocole)
+- [URLs, HTTPS protocol.](#URLs-HTTPS-protocol)
 - [Page links.](#page-links)
 - [Error pages.](#error-pages)
 - [Redirects.](#redirects)
@@ -167,7 +167,7 @@ This file can contain instructions for search engines. Please [check for additio
 
 This file contains the site structure to help search engines crawl your site. Additional information can be found [here](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview).
 
-### URLs, HTTPS protocole
+### URLs, HTTPS protocol
 
 Google prioritizes user safety by considering HTTPS as a ranking factor. Therefore, it's important to obtain an SSL certificate and enable HTTPS on your client's site.
 
