@@ -5,7 +5,7 @@ This chapter is dedicated to the technical stack of the Front-End part of web ap
 Table of content:
 
 1. [Factors to Consider When Choosing Tech Stack](#factors-to-consider-when-choosing-tech-stack)
-2. [JavaScript vs. TypeScript](#javascript-vs-typescript)
+2. [JavaScript vs. TypeScript: A Practical Perspective](#javascript-vs-typescript)
 3. [Front-End Frameworks and Metaframeworks](#front-end-frameworks-and-metaframeworks)
 4. [Infrastructure](#infrastructure)
 
