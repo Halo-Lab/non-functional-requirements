@@ -226,33 +226,33 @@ Try to use semantic HTML tags, such as `<main>`, `<article>`, etc., as they are 
 
 ## Summary
 
-## When and Why Think About Technical SEO
+### When and Why Think About Technical SEO
 Technical SEO should be prioritized during web application development to enhance the end-user experience, prioritize safety, accommodate various screen sizes and slow internet connections, and effectively address user needs.
 
-## Golden Rule of SEO
+### Golden Rule of SEO
 The golden rule of SEO emphasizes that what is good for the end-user is also good for search engines, highlighting the importance of user experience in web development.
 
-## Mobile-Friendly or Compatible with All Screen Sizes
+### Mobile-Friendly or Compatible with All Screen Sizes
 With mobile traffic comprising a significant portion of web traffic, websites should be usable on all screen sizes to ensure convenience for users across devices.
 
-## Performance or Pagespeed
+### Performance or Pagespeed
 Optimizing website performance, as measured by tools like PageSpeed Insights and Core Web Vitals, is crucial for enhancing user satisfaction and improving search engine rankings.
 
-## Site and Page Meta Data, Open Graph Protocol
+### Site and Page Meta Data, Open Graph Protocol
 Optimizing page metadata, including title, description, and keywords, along with implementing the Open Graph protocol, enhances visibility on search engines and improves user experience during site navigation and social media sharing.
 
-## Image Optimization
+### Image Optimization
 Optimizing images with attributes like alt text, specifying width and height, using srcset, and choosing the correct loading strategy improves page load time, reduces hosting costs, and enhances user experience.
 
-## Robots.txt and Sitemap.xml
+### Robots.txt and Sitemap.xml
 Robots.txt and Sitemap.xml files provide instructions for search engines and help them crawl and index your site effectively, contributing to better search engine visibility.
 
-## URLs, HTTPS Protocol
+### URLs, HTTPS Protocol
 Using user-friendly URLs and enabling HTTPS protocol not only prioritizes user safety but also improves search engine rankings.
 
-## Page Links, Error Pages, Redirects
+### Page Links, Error Pages, Redirects
 Internal links, user-friendly error pages, and proper redirects enhance user experience and SEO by improving site navigation and preserving SEO value during page deletions.
 
-## Semantical Page Structure, Schema.org
+### Semantical Page Structure, Schema.org
 Using semantic HTML tags and incorporating Schema.org markup informs search engines about your page's content and enhances search enhancements, known as rich snippets, on search engine results pages.
 
