@@ -1,5 +1,41 @@
 # Code Quality
 
+## Checklist
+
+- **Linting**:
+  - [ ] Utilize ESLint with the Airbnb JS Style Guide for JavaScript linting.
+  - [ ] Implement Stylelint with stylelint-order plugin for CSS/SCSS linting.
+  - [ ] Apply HTMLHint for HTML linting.
+  - [ ] Automate code linting with pre-commit hooks using Husky.
+  - [ ] Consider integrating formatters like Prettier for code formatting alongside linting.
+
+- **Testing** (if applicable for your project):
+  - [ ] Utilize a test runner like Jest, native Node test runner, or Vitest for testing.
+  - [ ] Employ Testing Library for efficient front-end app testing.
+  - [ ] Consider end-to-end testing with tools like Puppeteer or Playwright for critical application flows.
+  - [ ] Optionally, incorporate visual testing with tools like Storybook and Loki for front-end apps.
+  - [ ] Avoid tests interacting with real-world elements; use mocking and stubbing tools like Nock or Mock Service Worker.
+
+- **Naming**:
+  - [ ] Use camel case for variables and function names.
+  - [ ] Avoid Hungarian notation; use descriptive names instead.
+  - [ ] Avoid one-letter variable names except for loop counters or indexes.
+  - [ ] Use semantic and descriptive names that reflect the function's action.
+  - [ ] Prefix predicate function names with "is" or "has" for clarity.
+  - [ ] Name collections in plural form and quantities as noun + Count.
+
+- **Dependencies Management**:
+  - [ ] Regularly update packages to leverage the latest features and security patches.
+  - [ ] Utilize semantic versioning (semver) for package updates in package.json.
+  - [ ] Use caret symbol (^) to allow updates of patch and minor versions.
+  - [ ] Check and update outdated packages regularly, at least monthly, and before release.
+
+- **Interface Texts Storing**:
+  - [ ] Organize interface texts using i18next for centralized storage and internationalization.
+  - [ ] Store interface texts in a `locales` directory with modules for different languages.
+  - [ ] Access interface texts using the useTranslation hook in components.
+  - [ ] Consider this approach to prevent the use of magic strings and improve maintainability.
+
 ## Linting
 
 Linter helps to write readable code and prevents some errors. Linting helps developers to work together. 
@@ -52,7 +88,7 @@ Some examples and recommendations:
 - Predicate functions names should start with `is`: `isValid()`. In some cases you need predicate to check whether something present somewhere, e.g. whether user has discount: `hasDiscount()`. Another case of predicate naming: check whether something is allowed - `canFly(user)`.
 - Use plural form on nouns to name collections: `users`, `userBooks` etc.
 - Quantity can be named as noun + Count, e.g. `booksCount`. Don’t use here `countBooks`, this is good name for function: `countBooks()`.
-- Hooks notations?
+- Boolean variable does not need to start with `is` like predicate functions: `const validEmail = isValidEmail(userEmail)`.
 
 ## Dependencies management
 
@@ -137,3 +173,31 @@ const Modal = () = {
 Useful link: https://react.i18next.com/
 
 This approach to organizing interface texts helps to prevent common anti-pattern: [magic strings](https://stoic.software/effective-suitescript/magic-strings-the-anti-pattern/).
+
+## Summary:
+
+### Linting:
+- **Importance:** Linting ensures code readability and error prevention, facilitating collaboration among developers.
+- **Popular Tools:** Utilize ESLint with the Airbnb JS Style Guide for JavaScript linting, Stylelint for CSS/SCSS linting, and HTMLHint for HTML linting.
+- **Recommended Setup:** Automate code linting using pre-commit hooks with tools like Husky to ensure consistent adherence to coding standards.
+- **Additional Consideration:** While formatters like Prettier can be used alongside linters, prioritizing linting is preferred as it not only formats code but also checks its semantics.
+
+### Testing:
+- **Significance:** Testing verifies code functionality and is crucial for ensuring app reliability.
+- **Key Tools:** Employ Jest or other test runners for unit testing, Testing Library for efficient component testing, and end-to-end testing tools like Puppeteer for critical application flows.
+- **Best Practices:** Emphasize visual testing for front-end apps and avoid tests that interact with real-world elements to maintain test reliability.
+- **Code Coverage:** Monitor code coverage using tools like CodeCov or Code Climate to ensure comprehensive test coverage.
+
+### Naming:
+- **Importance:** Clear and semantic naming enhances code understandability and maintainability.
+- **Recommendations:** Follow conventions outlined in resources like Chapter 11 of "Code Complete" by Steve McConnell, emphasizing camel case, avoiding Hungarian notation, and using descriptive names reflecting function actions.
+
+### Dependencies Management:
+- **Benefits:** Regularly updating packages offers access to the latest features, protection from vulnerabilities, and avoids major updates that could disrupt app functionality.
+- **Semver Usage:** Utilize semantic versioning (semver) in package.json to control minor and patch version updates, ensuring compatibility without risking app stability.
+- **Best Practices:** Regularly check for and update outdated packages, preferably monthly, and review dependencies before release to maintain package integrity.
+
+### Interface Texts Storing:
+- **Challenge:** Storing interface texts directly in code becomes cumbersome in larger applications with complex interfaces.
+- **Solution:** Organize interface texts using libraries like i18next, enabling centralized storage in locale files and access through useTranslation hook, preventing the use of magic strings.
+- **Recommended Approach:** Even if internationalization is not currently required, adopting i18next aids in managing interface texts effectively and preventing common anti-patterns like magic strings.
