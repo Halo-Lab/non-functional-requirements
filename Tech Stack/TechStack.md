@@ -68,3 +68,19 @@ It's essential to avoid selecting esoteric or lesser-known frameworks.
 Using metaframeworks like Next.js, Gatsby, Remix, etc., is recommended. These frameworks offer additional tools and optimizations, including built-in image optimization and SEO features, while also handling various low-level tasks such as bundling.
 
 Please refrain from using Create React App in production settings. While it's a useful tool for bootstrapping projects, it's not suitable for commercial projects.
+
+## Infrastructure
+
+We utilize Caprover for staging deployment, and you can refer to the development documentation for more information on this tool. If, for any reason, Caprover cannot be used for your project, alternative options can be explored after consultation with your client, team lead, and project manager. Services such as Render.com, Vercel, Surge, or others that align with your project goals can be considered.
+
+Discussion and planning of the infrastructure for production should be conducted with the client and your team. Depending on the project's requirements and client preferences, options such as AWS, Microsoft Azure, Digital Ocean, or other suitable services can be considered.
+
+## Summary:
+
+- Factors to Consider When Choosing Tech Stack: Project requirements, business goals, developer availability, and team skills influence the tech stack choice.
+
+- JavaScript vs. TypeScript: The choice between JavaScript and TypeScript depends on context, with TypeScript offering improved documentation and error reduction benefits.
+
+- Front-End Frameworks and Metaframeworks: React is the preferred choice due to its robustness and developer availability. Vue and Svelte offer advantages but are more prescriptive. Metaframeworks like Next.js and Gatsby are recommended for additional tools and optimizations.
+
+- Infrastructure: Caprover is used for staging deployment, with alternatives like Render.com and Vercel available if needed. Infrastructure for production should be planned with the client and team, considering options like AWS, Microsoft Azure, or Digital Ocean.
