@@ -65,7 +65,7 @@ Therefore, the choice between Vue and React for a new project depends on the spe
 
 It's essential to avoid selecting esoteric or lesser-known frameworks.
 
-Using metaframeworks like Next.js, Gatsby, Remix, etc., is recommended. These frameworks offer additional tools and optimizations, including built-in image optimization and SEO features, while also handling various low-level tasks such as bundling.
+Using metaframeworks like Next.js, Remix, Astro, etc., is recommended. These frameworks offer additional tools and optimizations, including built-in image optimization and SEO features, while also handling various low-level tasks such as bundling.
 
 Please refrain from using Create React App in production settings. While it's a useful tool for bootstrapping projects, it's not suitable for commercial projects.
 
