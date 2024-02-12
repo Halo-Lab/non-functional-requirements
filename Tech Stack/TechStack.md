@@ -9,6 +9,30 @@ Table of content:
 3. [Front-End Frameworks and Metaframeworks](#front-end-frameworks-and-metaframeworks)
 4. [Infrastructure](#infrastructure)
 
+## Technical Stack Checklist
+
+### Factors to Consider When Choosing Tech Stack:
+
+- [ ] **Project Requirements, Business Area, and Goals:** Have we thoroughly considered the project's functional requirements, business objectives, and the specific industry it operates in?
+- [ ] **Current Job Market Situation:** Have we assessed the availability of developers with expertise in the chosen tech stack?
+- [ ] **Skills of Available Team Members:** Do our team members possess the necessary skills to effectively work with the selected technologies?
+
+### JavaScript vs. TypeScript: A Practical Perspective:
+
+- [ ] **Context and Preferences:** Have we evaluated the advantages and disadvantages of JavaScript and TypeScript based on the project's requirements and team preferences?
+- [ ] **Alternative instruments:** Do we plan to use JSDoc type annotation, Prop Types or other tools if we don't use TypeScript in our project?
+
+### Front-End Frameworks and Metaframeworks:
+
+- [ ] **Framework Selection:** Have we justified our choice of React as the preferred front-end framework based on its robustness and developer availability?
+- [ ] **Alternatives Consideration:** Have we evaluated Vue and Svelte as viable alternatives, considering their specific advantages and drawbacks?
+- [ ] **Metaframeworks:** Do we plan to use metaframeworks like Next or Remix, as they give additional advantages?
+
+### Infrastructure:
+
+- [ ] **Production Infrastructure:** Have we discussed and planned the production infrastructure with the client and team, considering options like AWS, Microsoft Azure, or Digital Ocean?
+
+
 ## Factors to Consider When Choosing Tech Stack
 
 When selecting a project tech stack, it's crucial to consider the project's functional requirements, business area and goals, the current job market situation for developers, and the skills of available team members.
